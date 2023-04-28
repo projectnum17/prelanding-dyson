@@ -1,0 +1,75 @@
+/* ______________ fonts start ___________ */
+@font-face {
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 300;
+    src: local(''),
+        url('..assets/fonts/oswald-v48-latin-300.woff') format('woff2'),
+        url('..assets/fonts/oswald-v48-latin-300.woff') format('woff');
+}
+
+/* ______________ fonts end ___________ */
+
+/* ______________ basis settings ___________ */
+:root {
+    --text-color: #000;
+}
+
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Oswald', sans-serif;
+    color: var(--text-color);
+    line-height: 24px;
+    font-size: 16px;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+}
+
+
+ul {
+    list-style: none;
+}
+
+a {
+    color: inherit;
+}
+
+button {
+    border: none;
+    background-color: inherit;
+    cursor: pointer;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    line-height: 0;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    max-width: 1060px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
