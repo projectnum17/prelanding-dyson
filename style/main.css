@@ -13,6 +13,7 @@
 /* ______________ basis settings ___________ */
 :root {
     --text-color: #000;
+    --background: #948cb5;
 }
 
 
@@ -52,6 +53,8 @@ ul {
 
 a {
     color: inherit;
+    display: block;
+    text-decoration: none;
 }
 
 button {
@@ -72,4 +75,78 @@ img {
     max-width: 1060px;
     margin: 0 auto;
     padding: 0 15px;
+}
+
+/* header start */
+.header {
+    display: flex;
+    align-items: center;
+    background: var(--background);
+    padding: 5px;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 50;
+}
+
+.header__logo img {
+    width: 80px;
+}
+
+/* header end */
+
+/* video start */
+.video {
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+}
+
+.video video {
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.video__overlay {
+    background: rgba(0, 0, 0, .7);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+}
+
+/* video end */
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    background: var(--background);
+    width: 100%;
+    border-top-left-radius: 60px;
+    border-top-right-radius: 60px;
+}
+
+.footer__content-item {
+    display: flex;
+    padding: 5px;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
 }
