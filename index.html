@@ -6,12 +6,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dyson</title>
+    <!-- favicon -->
     <link rel="icon" href="assets/images/favicon.png" type="image/x-icon">
+    <!-- css -->
     <link rel="stylesheet" href="style/main.css">
+    <!-- js -->
+    <script src="js/libs/jquery-3.6.0.min.js" defer></script>
     <script src="js/main.js" defer></script>
 </head>
 
 <body>
+    <!-- header start -->
     <header class="header">
         <div class="container">
             <div class="header__logo">
@@ -21,38 +26,74 @@
             </div>
         </div>
     </header>
+    <!-- header end -->
+
     <main class="main">
+
         <section class="intro">
             <div class="container">
+                <!-- video -->
                 <div class="video">
                     <video preload="auto" muted autoplay="autoplay" playsinline loop="loop" no-controls>
                         <source src="assets/video/video-bg.mp4" type="video/mp4" codecs="avc1.42E01E, mp4a.40.2">
                     </video>
                     <div class="video__overlay"></div>
                 </div>
+                <!-- video -->
+
+                <!-- main content -->
+
+                <div class="intro__content">
+                    <h1 class="intro__content-title">
+                        <span>win</span> the new Vacuum Cleaners
+                    </h1>
+                    <p class="intro__content-description">Enter your data to continue</p>
+                </div>
+
+                <div class="intro__product">
+                    <div class="intro__img">
+                        <img src="assets/images/second-photo.jpg" alt="Dyson">
+                        <!-- <img src="assets/images/first-photo.jpg" alt="Dyson"> -->
+                    </div>
+
+                    <!-- form -->
+                    <div class="form__container">
+                        <form id="form" class="form">
+                            <div class="form-control">
+                                <input type="text" id="username" placeholder="Enter Username">
+                                <small>Error Message</small>
+                            </div>
+                            <div class="form-control">
+                                <input type="text" id="email" placeholder="Enter email">
+                                <small>Error Message</small>
+                            </div>
+                            <button>Send</button>
+                        </form>
+                    </div>
+                    <!-- form -->
+
+                </div>
+                <!-- main content -->
+
             </div>
         </section>
+
+        <!-- footer start -->
         <footer class="footer">
             <div class="container">
                 <div class="footer__content">
-<!--                     <p class="footer__content-descr">Lorem ipsum dolor sit amet.</p>
-                    <p class="footer__content-descr">Lorem ipsum dolor sit amet.</p>
-                    <p class="footer__content-descr">Lorem ipsum dolor sit amet.</p>
-                    <p class="footer__content-descr">Lorem ipsum dolor sit amet.</p>
-
- -->                    <div class="footer__content-about">
-                        <ul class="footer__content-list">
-                            <li class="footer__content-item">
-                                <a href="#!" class="footer__content-link">About Us</a>
-                                <a href="#!" class="footer__content-link">Official Site</a>
-                                <a href="#!" class="footer__content-link">Privacy Policy</a>
-                                <a href="#!" class="footer__content-link">Contact Us</a>
-                            </li>
-                        </ul>
-                    </div>
+                    <ul class="footer__content-list">
+                        <li class="footer__content-item">
+                            <a href="#!" class="footer__content-link">About Us</a>
+                            <a href="#!" class="footer__content-link">Official Site</a>
+                            <a href="#!" class="footer__content-link">Privacy Policy</a>
+                            <a href="#!" class="footer__content-link">Contact Us</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </footer>
+        <!-- footer end -->
     </main>
 </body>
 
