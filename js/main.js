@@ -1,4 +1,4 @@
-/* const form = document.getElementById('form');
+const form = document.getElementById('form');
 const username = document.getElementById('username');
 const email = document.getElementById('email');
 const password = document.getElementById('password');
@@ -64,12 +64,12 @@ form.addEventListener('submit',function(e) {
     checkRequired([username, email]);
     checkLength(username,3,15);
     checkEmail(email);
-}); */
+}); 
 
 // Отправка заявки 
 $(document).ready(function() {
 	$('#form').submit(function() { // проверка на пустоту заполненных полей. Атрибут html5 — required не подходит (не поддерживается Safari)
-		if (document.form.name.value == '' || document.form.phone.value == '' ) {
+		if (document.form.name.value == '' || document.form.email.value == '' ) {
 			valid = false;
 			return valid;
 		}
