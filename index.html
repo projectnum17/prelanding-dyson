@@ -53,33 +53,30 @@
                 <div class="intro__product">
                     <div class="intro__img">
                         <img src="assets/images/second-photo.jpg" alt="Dyson">
-                        <!-- <img src="assets/images/first-photo.jpg" alt="Dyson"> -->
                     </div>
-
                     <!-- form -->
                     <div class="form__container">
-                        <form id="form" class="form">
-
-                            <!-- Hidden Required Fields -->
-                            <input type="hidden" name="project_name" value="Dyson Prelanding">
-                            <input type="hidden" name="admin_email" value="egor.chornyy@gmail.com">
-                            <input type="hidden" name="form_subject" value="Form Subject">
-                            <!-- END Hidden Required Fields -->
-
-
+                        <form id="form" class="form" name="form">
                             <div class="form-control">
-                                <input type="text" name="Name" id="username" placeholder="Enter your name" required>
+                                <input class="form-field" type="text" name="name" id="username" placeholder="Enter your name" required>
                                 <small>Error Message</small>
                             </div>
                             <div class="form-control">
-                                <input type="text" name="E-mail" id="email" placeholder="Enter email" required>
+                                <input class="form-field" type="text" name="email" id="email" placeholder="Enter email" required>
                                 <small>Error Message</small>
                             </div>
-                            <button>Send</button>
+                            <button class="form-button">Send</button>
                         </form>
                     </div>
-                    <!-- form -->
 
+                    <div class="overlay js-overlay-thank-you">
+                        <div class="popup js-thank-you">
+                            <h2>Thank you!</h2>
+                            <p>We will contact you shortly</p>
+                            <div class="close-popup js-close-thank-you"></div>
+                        </div>
+                    </div>
+                    <!-- form -->
                 </div>
                 <!-- main content -->
 
