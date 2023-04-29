@@ -59,12 +59,20 @@
                     <!-- form -->
                     <div class="form__container">
                         <form id="form" class="form">
+
+                            <!-- Hidden Required Fields -->
+                            <input type="hidden" name="project_name" value="Dyson Prelanding">
+                            <input type="hidden" name="admin_email" value="egor.chornyy@gmail.com">
+                            <input type="hidden" name="form_subject" value="Form Subject">
+                            <!-- END Hidden Required Fields -->
+
+
                             <div class="form-control">
-                                <input type="text" id="username" placeholder="Enter Username">
+                                <input type="text" name="Name" id="username" placeholder="Enter your name" required>
                                 <small>Error Message</small>
                             </div>
                             <div class="form-control">
-                                <input type="text" id="email" placeholder="Enter email">
+                                <input type="text" name="E-mail" id="email" placeholder="Enter email" required>
                                 <small>Error Message</small>
                             </div>
                             <button>Send</button>
