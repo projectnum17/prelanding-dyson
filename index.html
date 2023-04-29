@@ -8,6 +8,8 @@
     <title>Dyson</title>
     <!-- favicon -->
     <link rel="icon" href="assets/images/favicon.png" type="image/x-icon">
+    <!-- animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <!-- css -->
     <link rel="stylesheet" href="style/main.css">
     <!-- js -->
@@ -17,7 +19,7 @@
 
 <body>
     <!-- header start -->
-    <header class="header">
+    <header class="header animate__animated animate__fadeInDown">
         <div class="container">
             <div class="header__logo">
                 <a href="/" class="header__logo-link">
@@ -43,7 +45,7 @@
 
                 <!-- main content -->
 
-                <div class="intro__content">
+                <div class="intro__content animate__animated animate__heartBeat animate__delay-500ms animate__repeat-3">
                     <h1 class="intro__content-title">
                         <span>win</span> the new Vacuum Cleaners
                     </h1>
@@ -51,18 +53,20 @@
                 </div>
 
                 <div class="intro__product">
-                    <div class="intro__img">
+                    <div class="intro__img animate__animated animate__bounceInLeft">
                         <img src="assets/images/second-photo.jpg" alt="Dyson">
                     </div>
                     <!-- form -->
-                    <div class="form__container">
+                    <div class="form__container animate__animated animate__zoomInUp">
                         <form id="form" class="form" name="form">
                             <div class="form-control">
-                                <input class="form-field" type="text" name="name" id="username" placeholder="Enter your name" required>
+                                <input class="form-field" type="text" name="name" id="username"
+                                    placeholder="Enter your name" required>
                                 <small>Error Message</small>
                             </div>
                             <div class="form-control">
-                                <input class="form-field" type="text" name="email" id="email" placeholder="Enter email" required>
+                                <input class="form-field" type="text" name="email" id="email" placeholder="Enter email"
+                                    required>
                                 <small>Error Message</small>
                             </div>
                             <button class="form-button">Send</button>
@@ -73,18 +77,18 @@
                         <div class="popup js-thank-you">
                             <h2>Thank you!</h2>
                             <p>We will contact you shortly</p>
-                            <div class="close-popup js-close-thank-you"></div>
+                            <img src="./assets/images/logo.png" alt="Logo">
+                            <div class="close-popup js-close-thank-you">&#10006</div>
                         </div>
                     </div>
                     <!-- form -->
                 </div>
                 <!-- main content -->
-
             </div>
         </section>
 
         <!-- footer start -->
-        <footer class="footer">
+        <footer class="footer animate__animated animate__fadeInUp">
             <div class="container">
                 <div class="footer__content">
                     <ul class="footer__content-list">
