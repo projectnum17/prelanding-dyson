@@ -6,12 +6,26 @@ $(window).ready(function () {
 });
 
 // відправка 
+
 $(document).ready(function () {
 	$('#form').submit(function () { // перевірка на пусті поля. Атрибут html5 — required не підходить (не підпримується Safari)
 		if (document.form.name.value == '' || document.form.email.value == '') {
 			valid = false;
 			return valid;
-		}
+		};
+
+		$('#form input[type=email]').on('blur', function () {
+			let email = $(this).val();
+
+			if (email.length > 0
+				&& (email.match(/.+?\@.+/g) || []).length !== 1) {
+				console.log('invalid');
+				alert('Не корректний e-mail!');
+			} else {
+				console.log('valid');
+			}
+		});
+
 		$.ajax({
 			/* type: "POST",
 			url: "mail/mail.php", */
