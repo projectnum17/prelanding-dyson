@@ -11,6 +11,68 @@
 /* ______________ fonts end ___________ */
 
 /* ______________ basis settings ___________ */
+
+/* loader */
+.loader {
+    background: none repeat scroll 0 0 #fff;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 9999;
+}
+
+.loader .loader_inner {
+    animation: animate 1.5s linear infinite;
+    clip: rect(0, 80px, 80px, 40px);
+    height: 80px;
+    width: 80px;
+    position: absolute;
+    left: calc(50% - 40px);
+    top: calc(50% - 40px);
+}
+
+@keyframes animate {
+    0% {
+        transform: rotate(0deg)
+    }
+
+    100% {
+        transform: rotate(220deg)
+    }
+}
+
+.loader .loader_inner:after {
+    animation: animate2 1.5s ease-in-out infinite;
+    clip: rect(0, 80px, 80px, 40px);
+    content: '';
+    border-radius: 50%;
+    height: 80px;
+    width: 80px;
+    position: absolute;
+}
+
+@keyframes animate2 {
+    0% {
+        box-shadow: inset #b3dfd8 0 0 0 17px;
+        transform: rotate(-140deg);
+    }
+
+    50% {
+        box-shadow: inset #b3dfd8 0 0 0 2px;
+    }
+
+    100% {
+        box-shadow: inset #b3dfd8 0 0 0 17px;
+        transform: rotate(140deg);
+    }
+}
+
+/* loader */
+
 :root {
     --text-color: #000;
     --background: #948cb5;
@@ -292,25 +354,25 @@ select:-webkit-autofill:focus {
 
 /* popup */
 .overlay {
-	position: absolute;
-	width: 100%;
-	height: 100vh;
-	top: 0;
-	left: 0;
-	background-color: rgba(0, 0, 0, .8);
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .8);
     display: none;
     z-index: 1000000;
 }
 
 .popup {
-	position: absolute;
-	width: 300px;
-	height: 180px;
-	left: 50%;
-	top: 50%;
-	transform: translate(-50%, -50%);
-	padding: 40px;
-	background-color: #eee;
+    position: absolute;
+    width: 300px;
+    height: 180px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 40px;
+    background-color: #eee;
     border-radius: 15px;
     text-align: center;
     display: flex;
@@ -323,27 +385,31 @@ select:-webkit-autofill:focus {
     font-size: 30px;
     margin-bottom: 5px;
 }
+
 .popup p {
     font-size: 15px;
     margin-bottom: 20px;
 }
+
 .popup img {
     width: 60px;
 }
 
 .close-popup {
-	position: absolute;
-	top: 5px;
-	right: 5px;
-	width: 23px;
-	height: 23px;
-	cursor: pointer;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 23px;
+    height: 23px;
+    cursor: pointer;
     transition: .2s linear;
     -webkit-transition: .2s linear;
 }
+
 .close-popup:hover {
     transform: rotate(90deg);
 }
+
 /* popup */
 
 /* media */
@@ -394,7 +460,7 @@ select:-webkit-autofill:focus {
     .intro__product {
         padding-top: 40px;
     }
-    
+
 }
 
 @media screen and (max-width:360px) {
